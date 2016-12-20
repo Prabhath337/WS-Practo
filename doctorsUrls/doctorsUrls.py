@@ -105,6 +105,11 @@ def get_strings(pass_bs,element_tag,bs_class):
 	except Exception as ex:
 		print(str(ex))
 
+def get_doctors_urls():
+	ele_list=[]
+	for elehref in get_doctors_main_url():
+		ele_list.append(elehref)
+	return ele_list
 
 if __name__=="__main__":
-	get_doctors_main_url()
+	get_doctors_urls()
