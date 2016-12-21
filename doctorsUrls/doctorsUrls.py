@@ -3,11 +3,7 @@ import doctorsSpecializations
 from bs4 import BeautifulSoup
 import requests,os,json
 import time
-import xlsxwriter
-"""
-get_doctors_main_url fuction returns the final url of doctor which can be used for getting data from it
 
-"""
 def get_doctors_main_url():
 	try:
 		for city_spec_urls in doctorsSpecializations.practo_url_get_doctors_details():
@@ -34,11 +30,6 @@ def get_doctors_phone_no(doc_id):
 		
 	except Exception as e:
 		print(str(e))
-
-
-
-
-
 
 def get_strings(pass_bs,element_tag,bs_class):
 	try:

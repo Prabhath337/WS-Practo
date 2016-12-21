@@ -103,8 +103,4 @@ def practo_url_get_doctors_details():
 		print(str(e))
 
 
-# if __name__=='__main__':
-# 	for i in practo_url_get_doctors_details():
-# 		print(i)
-
 	
